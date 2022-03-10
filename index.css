@@ -1,0 +1,108 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: powderblue;
+  padding: 6px;
+  text-align: center;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title > div {
+  min-height: em;
+  max-height: em;
+  width: 40em;
+  background-color: snow;
+  margin: 12px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px double cornflowerblue;
+  box-shadow: 1px 1px 12px cornflowerblue;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.flex-container > div {
+  min-height: em;
+  max-height: em;
+  width: 30em;
+  background-color: snow;
+  margin: 12px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px double cornflowerblue;
+  box-shadow: 1px 1px 12px cornflowerblue;
+}
+
+h1 {
+  color: rgb(187, 158, 255);
+  font-size: 22px;
+  text-shadow: 3px 3px lemonchiffon;
+  background-color: snow;
+}
+
+h2 {
+  color: rgb(187, 158, 255);
+  font-size: 16px;
+  text-shadow: 3px 3px lemonchiffon;
+  background-color: snow;
+}
+
+p {
+  font-size: 12px;
+  color: rgb(187, 158, 255);
+  background-color: snow;
+  text-align: left;
+  padding: 0%;
+  padding-left: 10%;
+  margin: 4px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  background-color: rgb(187, 158, 255);
+  padding: 10px 10px;
+  border: 1px dashed snow;
+  box-shadow: 1px 1px 6px rgb(187, 158, 255);
+  color: snow;
+  font-size: 18px;
+  border-radius: 3px;
+  transition-duration: 0.3s;
+  cursor: progress;
+}
+.button:hover {
+  background-color: powderblue;
+  color: rgb(32, 32, 206);
+  box-shadow: 2px 2px 6px rgb(187, 158, 255);
+  border: 1px dashed rgb(187, 158, 255);
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 80%;
+  padding: 5px 10px;
+  margin: 7px;
+  border: 1px dotted snow;
+  box-shadow: 1px 1px 3px rgb(187, 158, 255);
+  color: rgb(187, 158, 255);
+  font-size: 14px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  background-color: lemonchiffon;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  background-color: rgb(187, 158, 255);
+  border: 1px dotted rgb(187, 158, 255);
+  color: lemonchiffon;
+  box-shadow: 2px 2px 8px lemonchiffon;
+  outline: none;
+}
