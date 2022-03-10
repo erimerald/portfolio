@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Myytävät asunnot</title>
+    <link href="./index.css" type="text/css" rel="stylesheet" />
+
+    <!-- Project Setup info-->
+<!-- Toteuta kiinteistönvälittäjälle ohjelma, jolla hän voi lisätä myytäviä asuntoja ja hakea niiden tietoja.
+Kunkin asunnon tiedot tallennetaan asunto -nimiseen olioon. Olion ominaisuuksia ovat kohdenumero, osoite, hinta ja pinta-ala. 
+Toteuta ohjelma käyttäen constructoria. Toteuta myös metodi nimeltä laskeNelioHinta() asunnon neliöhinnan laskemista varten. 
+Tee ohjelmaan käyttöliittymä, jolla käyttäjä voi lisätä asuntoja. Lisätyt asunto-oliot tallennetaan taulukkoon (array), jonka nimi on asunnot.
+Tee ohjelmaan myös hakutoiminto eli kiinteistön kohdenumerolla pitäisi voida hakea asunnon tiedot. Ohjelman pitäisi laskea myös haetun asunnon neliöhinta ja tulostaa se. -->
+<!-- Hakutoiminto elokuvatehtävässä kaipaa pientä tarkennusta.
+Tulet tarvitsemaan tätä viimeisessä osiossa, joten kertaa vielä se, miten saat ohjelman tulostamaan "Ei löydy". Tätä voit pohtia lisähaasteena.  -->
+
+  </head>
+  <body onload="alusta();">
+    <script src="./b_scripts_oliot.js"></script>
+  <body>
+
+    <div class="title">
+      <div>
+      <h1>Myytävät asunnot</h1>
+        <h2>Ohjeet:</h2>
+        <p>Lisää asunnon tiedot kenttiin, voit myös hakea kohteita kohdenumerolla.</p>
+      </div>
+      </div>
+
+    <div class="flex-container">
+      <div>
+        <h2>Lisää uusi asunto</h2>
+        <p>Kohdenumero:</p>
+        <input type="number" id="inputKohdenumero" />
+        <p>Osoite:</p>
+        <input type="text" id="inputOsoite" />
+        <p>Hinta:</p>
+        <input type="number" id="inputHinta" />
+        <p>Pinta-ala:</p>
+        <input type="number" id="inputPintaAla" />
+        <button class="button" onclick="lisaaAsunto()" > Lisää asunto</button>
+      </div>
+
+      <div>
+        <h2>Hae asuntoa tietokannasta</h2>
+        <p>Asunnon kohdenumero:</p>
+        <input type="number" id="inputHaeKohdenumero" />
+        <button class="button" onclick="haeAsunto()" > Hae asuntoa</button>
+      </div>
+
+      <div>
+        <h2>Lisäohjeet tai tulokset:</h2>
+        <h2 id="tulostusAlue"></h2>
+      </div>
+    </div>
+
+  </body>
+</html>
+
+<!DOCTYPE html>

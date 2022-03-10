@@ -1,0 +1,47 @@
+<!-- b) TEHTÄVÄNANTO Array (taulukko):
+
+Tee ohjelma, jolla käyttäjä voi syöttää ja hakea katsomiensa elokuvien nimiä. Elokuvia voi olla niin monta kuin käyttäjä haluaa.
+ Ohjelman pitäisi tallentaa nimet arrayhin. (Arrayssa tiedot ovat ohjelman työmuistissa, joten ne katoavat viimeistään, kun ohjelman suoritus lopuu).
+
+Ohjelman pitäisi lisäksi tulostaa kaikkien elokuvien nimet alekkain aakkosjärjestyksessä, jos käyttäjä klikkaa tulosta -nappia. 
+
+Tee ohjelmaan myös haku-toiminto. Käyttäjä antaa elokuvan nimen ja ohjelma ilmoittaa, onko kyseinen elokuva katsottujen listalla.  -->
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Elokuvalistani</title>
+    <link href="./index.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body onload="alusta();">
+    <script src="./b_scripts.js"></script>
+  <body>
+    <div class="flex-container">
+      <div>
+        <h1>Elokuvalistani</h1>
+      </div>
+
+      <div>
+        <h2>1. Anna elokuvan nimi:</h2>
+        <input type="text" id="input" />
+        <button class="button" onclick="tallenna();">Tallenna</button>
+        <h2>2. Tulostaa katsotut elokuvat:</h2>
+        <button class="button" onclick="tuoLista();">Näytä lista!</button>
+        <h2>3. Tarkistaa onko elokuva jo katsottu:</h2>
+        <button class="button" onclick="hae();" >Tarkista lista!</button>
+      </div>
+      <div>
+        <h2>4. Lista ja lisäohjeet</h2>
+        <h2 id="tulostusAlue"></h2>
+      </div>
+
+
+
+
+    </div>
+
+  </body>
+</html>
+
+<!DOCTYPE html>

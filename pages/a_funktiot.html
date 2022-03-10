@@ -1,0 +1,44 @@
+<!-- Project Setup info-->
+<!-- Ohjeet:
+Tee funktio, joka saa parametrina henkilötunnuksen. Funktion pitäisi palauttaa tieto, onko henkilö syntynyt 2000 -luvulla. 
+Tee myös funktion kutsu ja testitulostus. Katso henkilötunnuksen rakenne täältä: https://fi.wikipedia.org/wiki/Henkil%C3%B6tunnus -->
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Oletko syntynyt 2000-luvulla?</title>
+    <link href="./index.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body onload="alusta();">
+    <script src="./a_scripts_funktiot.js"></script>
+  <body>
+    <div class="title">
+      <div>
+        <h1>Oletko syntynyt 2000-luvulla</h1>
+      </div>
+
+      <div>
+        <h2>Ohjeet</h2>
+        <p>Lisää henkilötunnus alla olevaan kenttään. Ohjelma tarkistaa onko henkilö syntynyt 2000-luvulla.</p>
+      </div>
+
+      <div>
+        <h2>Anna henkilötunnus:</h2>
+        <input type="text" id="henkilotunnus" />
+        <button class="button" onclick="tarkistaVuosisata();">Press me</button>
+        </div>
+        
+        
+        <div>
+        <h2>Vastaus:</h2>
+        <h2 id="tulostusAlue"></h2>
+        </div>
+    </div>
+
+  </body>
+</html>
+
+<!DOCTYPE html>
+

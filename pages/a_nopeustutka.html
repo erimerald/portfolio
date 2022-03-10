@@ -1,0 +1,77 @@
+<!-- TEHTÄVÄNANTO a)  Valintarakenne (if-lause)     kts nopeustutka.jpg
+
+Tee liikennettä valvovalle poliisille avuksi ohjelma, jolle syötetään ohi ajavan auton nopeus ja
+ tiellä sallittu suurin nopeus eli nopeusrajoitus.
+ Ohjelman pitäisi tulostaa poliisille toimintaohje.
+
+Mikäli ylinopeutta ei ole, niin ohjelma tulostaa ”Toivota hyvää matkaa!”
+
+Jos ylinopeutta on yli 20 kilometriä tunnissa, niin ohjelma tulostaa 
+”Kysy tulot ja laske päiväsakko”.
+
+Mikäli ylinopeutta on  1– 20 kilometriä tunnissa, niin ohjelma tulostaa 
+”Määrää liikennevirhemaksu!”.
+
+Lisäksi ohjelma tulostaa tarvittaessa liikennavirhemaksun määrän. Maksu määräytyy seuraavalla tavalla:
+
+Nopeusrajoituksen rikkominen enintään 60 km/h alueella:
+
+    ylinopeus 1 - 10 km/h 100 euroa
+    ylinopeus 11 - 15  km/h 170 euroa
+    ylinopeus 16 - 20  km/h 200 euroa
+
+Nopeusrajoituksen rikkominen yli 60 km/h alueella:
+
+    ylinopeus 1 - 10 km/h 70 euroa
+    ylinopeus 11 - 15  km/h 140 euroa
+    ylinopeus 16 - 20  km/h 170 euroa -->
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Nopeustutka</title>
+    <link href="./index.css" type="text/css" rel="stylesheet" />
+  </head>
+
+  <body onload="alusta();">
+    <script src="./a_scripts.js"></script>
+
+ <!-- sivulla olevien divien containeri -->
+    <div class="flex-container">
+      <div>
+        <h1> Nopeustutka </h1>
+      </div>
+
+      <div>
+        <h2>Ohje:</h2>
+            <p>A) Anna ohittavan auton nopeus(1), ja alueen nopeusrajoitus(2) ylinopeussakon selvitystä varten.</br>
+            B) Tutkimuksen valmistuttua, toimi tutkimuksen lopputuloksen mukaisesti.</p>
+      </div>
+
+      <div>
+          <!-- input ohittavan auton nopeudelle -->
+        <h2>1. Ohittavan auton nopeus (km/h):</h2>
+        <input type="number" id="autonNopeus" />
+        </br>
+
+        <!-- input alueen nopeusrajoitukselle -->
+        <h2>2. Tien nopeusrajoitus (km/h):</h2>
+        <input type="number" id="tienRajoitus" />
+        </br>     
+        </br>
+        <!-- napin painaminen käynnistää tarkastaIka-funktion -->
+        <button class="button" type="button" onclick="tutkiYlitys();">
+         Tutki
+        </button>
+      </div>
+
+      <div>
+          <!-- näyttää sakon määrän tutkimuksen perusteella -->
+        <h2>Toimintaohje:</h2>
+        <h2 id="tulostusAlue"></h2>
+        <!-- <h2 id="maksu"></h2> -->
+      </div>
+    </div>
+
+  </body>
+</html>
