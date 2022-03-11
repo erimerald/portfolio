@@ -5,9 +5,6 @@
 // Tee ohjelmaan käyttöliittymä, jolla käyttäjä voi lisätä asuntoja. Lisätyt asunto-oliot tallennetaan taulukkoon (array), jonka nimi on asunnot.
 // Tee ohjelmaan myös hakutoiminto eli kiinteistön kohdenumerolla pitäisi voida hakea asunnon tiedot. Ohjelman pitäisi laskea myös haetun asunnon neliöhinta ja tulostaa se.
 
-// Hakutoiminto elokuvatehtävässä kaipaa pientä tarkennusta.
-// Tulet tarvitsemaan tätä viimeisessä osiossa, joten kertaa vielä se, miten saat ohjelman tulostamaan "Ei löydy". Tätä voit pohtia lisähaasteena.
-
 // Sijoittaa kursorin input-laatikkoon ja muuttaa sen arvon tyhjäksi
 function alusta() {
   // Tyhjentää input-kenttien arvon

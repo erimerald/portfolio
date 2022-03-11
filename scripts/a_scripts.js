@@ -1,5 +1,3 @@
-// <!-- a)  Valintarakenne (if-lause)     kts nopeustutka.jpg
-
 // Tee liikennettä valvovalle poliisille avuksi ohjelma, jolle syötetään ohi ajavan auton nopeus ja
 //  tiellä sallittu suurin nopeus eli nopeusrajoitus.
 //  Ohjelman pitäisi tulostaa poliisille toimintaohje.
@@ -24,7 +22,7 @@
 
 //     ylinopeus 1 - 10 km/h 70 euroa
 //     ylinopeus 11 - 15  km/h 140 euroa
-//     ylinopeus 16 - 20  km/h 170 euroa -->
+//     ylinopeus 16 - 20  km/h 170 euroa
 
 //asettaa kursorin input-laatikkoon kun sivu ladataan
 function alusta() {
