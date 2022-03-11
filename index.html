@@ -6,26 +6,33 @@
     <link href="/index.css" type="text/css" rel="stylesheet" />
   </head>
   <body>
-    <h1>Welcome!</h1>
-    <div id="tulostusAlue"></div>
+    <div class="title">
+      <div>
+      <h1>Welcome!</h1>
+    </div></div>
 
-    <div class="flex-container">
-      <div class="title"></div>
-      <div>
-        <a href="pages/a_funktiot.html">Oletko syntynyt 2000-luvulla?</a>
+    <div class="title">
+      <div class="flex-container">
+     <button class="button" type="button" 
+     onclick="location.href='pages/a_funktiot.html'">Oletko syntynyt 2000-luvulla?
+      </div></button>
+      <div class="flex-container">
+        <button class="button" type="button"
+        onclick="location.href='pages/a_nopeustutka.html'">Ajettiinko ylinopeutta?</button>
       </div>
-      <div>
-        <a href="pages/a_nopeustutka.html">Ajettiinko ylinopeutta?</a>
+      <div class="flex-container">
+        <button class="button" type="button"
+        onclick="location.href='pages/b_array.html'">Elokuvalista</button>
       </div>
-      <div>
-        <a href="pages/b_array.html">Elokuvalista</a>
-      </div>
-      <div>
-        <a href="pages/b_oliot.html">Myytävien asuntojen laskin</a>
+      <div class="flex-container">
+        <button class="button" type="button"
+        onclick="location.href='pages/b_oliot.html'">Myytävien asuntojen laskin</button>
       </div>
     </div>
-    <footer class="flex-container">
+    <footer>
+      <div>
       <p>Important information here.</p>
+    </div>
     </footer>
   </body>
 </html>

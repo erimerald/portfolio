@@ -12,13 +12,13 @@
 .title > div {
   min-height: em;
   max-height: em;
-  width: 40em;
+  width: 99%;
   background-color: snow;
   margin: 12px;
-  padding: 10px;
+  padding: 20px;
   border-radius: 12px;
-  border: 1px double cornflowerblue;
-  box-shadow: 1px 1px 12px cornflowerblue;
+  border: 6px double rgb(208, 182, 238);
+  box-shadow: 1px 1px 12px rgb(208, 182, 238);
 }
 .flex-container {
   display: flex;
@@ -32,10 +32,10 @@
   width: 30em;
   background-color: snow;
   margin: 12px;
-  padding: 10px;
+  padding: 20px;
   border-radius: 12px;
-  border: 1px double cornflowerblue;
-  box-shadow: 1px 1px 12px cornflowerblue;
+  border: 6px double rgb(208, 182, 238);
+  box-shadow: 1px 1px 12px rgb(208, 182, 238);
 }
 
 h1 {
@@ -69,6 +69,7 @@ a {
 .button {
   background-color: rgb(187, 158, 255);
   padding: 10px 10px;
+  margin: auto;
   border: 1px dashed snow;
   box-shadow: 1px 1px 6px rgb(187, 158, 255);
   color: snow;
@@ -88,7 +89,7 @@ input[type="text"],
 input[type="number"] {
   width: 80%;
   padding: 5px 10px;
-  margin: 7px;
+  margin: 20px;
   border: 1px dotted snow;
   box-shadow: 1px 1px 3px rgb(187, 158, 255);
   color: rgb(187, 158, 255);
