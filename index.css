@@ -12,7 +12,8 @@
 .title > div {
   min-height: em;
   max-height: em;
-  width: 99%;
+  width: 80%;
+  text-align: center;
   background-color: snow;
   margin: 12px;
   padding: 20px;
@@ -20,18 +21,20 @@
   border: 6px double rgb(208, 182, 238);
   box-shadow: 1px 1px 12px rgb(208, 182, 238);
 }
+
 .flex-container {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  align-items: flex-start;
+  justify-content: center;
 }
 
 .flex-container > div {
-  min-height: em;
+  min-height: 20%;
   max-height: em;
   width: 30em;
-  margin: 12px;
-  padding: 20px;
+  margin: 10px;
+  padding: 0, 2%, 0, 2%;
   border-radius: 12px;
   background-color: snow;
   border: 6px double rgb(208, 182, 238);
@@ -58,14 +61,14 @@ footer {
 }
 
 h1 {
-  color: rgb(187, 158, 255);
+  color: DarkSlateBlue;
   font-size: 22px;
   text-shadow: 3px 3px lemonchiffon;
   background-color: snow;
 }
 
 h2 {
-  color: rgb(187, 158, 255);
+  color: DarkSlateBlue;
   font-size: 16px;
   text-shadow: 3px 3px lemonchiffon;
   background-color: snow;
@@ -73,11 +76,10 @@ h2 {
 
 p {
   font-size: 12px;
-  color: rgb(187, 158, 255);
+  color: DarkSlateBlue;
   background-color: snow;
-  text-align: left;
-  padding: 0%;
-  padding-left: 10%;
+  text-align: center;
+  padding: 0, 8%, 0, 8%;
   margin: 4px;
 }
 

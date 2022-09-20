@@ -76,7 +76,7 @@ function tutkiYlitys() {
     nopeus <= rajoitus &&
     document.getElementById("autonNopeus").value.length != 0 //nopeus != 0
   ) {
-    tulostus = "Toivota hyvää makaa!";
+    tulostus = "Toivota hyvää matkaa!";
   }
   //tarkistaa onko alueen nopeusrajoitus max 60 km/h
   else if (rajoitus > 60) {
