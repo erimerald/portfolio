@@ -46,6 +46,7 @@ a {
   cursor: crosshair;
   text-decoration-line: overline underline;
   font-size: large;
+  font-size: 24px;
 }
 
 .title a {
@@ -62,20 +63,20 @@ footer {
 
 h1 {
   color: DarkSlateBlue;
-  font-size: 22px;
+  font-size: 36px;
   text-shadow: 3px 3px lemonchiffon;
   background-color: snow;
 }
 
 h2 {
   color: DarkSlateBlue;
-  font-size: 16px;
+  font-size: 24px;
   text-shadow: 3px 3px lemonchiffon;
   background-color: snow;
 }
 
 p {
-  font-size: 12px;
+  font-size: 20px;
   color: DarkSlateBlue;
   background-color: snow;
   text-align: center;
