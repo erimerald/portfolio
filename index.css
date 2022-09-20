@@ -46,7 +46,7 @@ a {
   cursor: crosshair;
   text-decoration-line: overline underline;
   font-size: large;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .title a {
@@ -86,12 +86,12 @@ p {
 
 .button {
   background-color: rgb(187, 158, 255);
-  padding: 10px 10px;
+  padding: 0.8em 0.8em;
   margin: auto;
   border: 1px dashed snow;
   box-shadow: 1px 1px 6px rgb(187, 158, 255);
   color: snow;
-  font-size: 18px;
+  font-size: 24px;
   border-radius: 3px;
   transition-duration: 0.3s;
   cursor: progress;
@@ -106,6 +106,7 @@ p {
 input[type="text"],
 input[type="number"] {
   width: 80%;
+  height: 3em;
   padding: 5px 10px;
   margin: 20px;
   border: 1px dotted snow;
