@@ -16,7 +16,7 @@
   text-align: center;
   background-color: snow;
   margin: 12px;
-  padding: 20px;
+  padding: 2%;
   border-radius: 12px;
   border: 6px double rgb(208, 182, 238);
   box-shadow: 1px 1px 12px rgb(208, 182, 238);
@@ -87,7 +87,7 @@ p {
 .button {
   background-color: rgb(187, 158, 255);
   padding: 0.8em 0.8em;
-  margin: auto;
+  margin: 10px;
   border: 1px dashed snow;
   box-shadow: 1px 1px 6px rgb(187, 158, 255);
   color: snow;
