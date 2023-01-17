@@ -23,14 +23,14 @@ function speak() {
   speechSynthesis.speak(utterance);
 
   utterance.addEventListener("start", function () {
-    // playButton.disabled = true;
     textArea.disabled = true;
     pitchBar.disabled = true;
     catFigure.classList.add("talking");
+    playButton.disabled = true;
   });
 
   utterance.addEventListener("end", function () {
-    // playButton.disabled = false;
+    playButton.disabled = false;
     textArea.disabled = false;
     pitchBar.disabled = false;
     catFigure.classList.remove("talking");
