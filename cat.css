@@ -67,6 +67,11 @@ button {
     font-size: 16px;
 }
 
+button:disabled{
+    opacity: 0.6;
+    background-color: aliceblue;
+}
+
 label{
     display:block;
     font-size: 16px;
@@ -80,4 +85,12 @@ label{
 #pitch-range{
     width: 100%; 
     accent-color: white;
+}
+
+.talking .static-cat {
+    display:none;
+}
+
+.talking .speaking-cat{
+    display: block;
 }
