@@ -7,23 +7,39 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Talking Duck</title>
-    <link href="/duck.css" type="text/css" rel="stylesheet" />
+    <title>Talking Cat</title>
+    <link href="/cat.css" type="text/css" rel="stylesheet" />
   </head>
-  <body onload="alusta();">
-    <script defer src="/scripts/duck.js"></script>
   <body>
+    <script defer src="/scripts/cat.js"></script>
     <div class="title">
-      <div>
+      <div class="container">
         <!-- Header -->
-        <h1>Oletko syntynyt 2000-luvulla</h1>
+        <h1>Talking Cat!</h1>
 
 <main>
-          <!-- Text area / input -->
-          <textarea></textarea>
+        <!-- Text area / input -->
+        <textarea placeholder="Write something here..."></textarea>
         <!-- Controls / pitch -->
+        <div class="controls">
+          <div>
+            <button>
+            Play!
+          </button>
+          </div>
+        <div class="pitch-controls">
+          <label>Pitch</label>
+          <input type="range"/>
+        </div>
+</div>
         <!-- Duck! -->
 
+        <figure>
+          <image src="../images/talking-cat-static.png"></image>
+          <image src="../images/talking-cat-talking.png"></image>
+
+        </figure>
+      </div>
 </main>
 
 
