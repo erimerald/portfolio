@@ -9,6 +9,96 @@ html {
     background-attachment: fixed;
 }
 
+main {
+    text-align:center;
+  }
+
+img {
+    max-width: 80%;
+    height: auto;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 16px;
+    width: 90%;
+}
+
+.panel {
+    background-color: white;
+    border-radius:10px;
+    padding: 16px 24px;
+    margin-bottom: 16px;
+}
+
+.commands ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.commands ul li {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+h3 {
+    color:grey;
+    margin-bottom: 16px;
+    font-size: 16 px;
+}
+
+button {
+border:none;
+background-color: blue;
+border-radius: 50px;
+padding: 12px;
+margin-bottom: 12px;
+}
+
+.codigotchi {
+    position: relative;
+    width: 280px;
+    margin: 0 auto 23px auto;
+}
+
+.codigotchi-screen{
+    position: absolute;
+    top: 110px;
+    left: 82px;
+    width: 120px;
+    height: 120px;
+    background-image: url('./images/static.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.panel-commands {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 88%;
+  }
+
+  .talking .panel-microphone {
+  visibility: hidden;  
+  }
+
+  .talking .panel-commands {
+    visibility:visible;
+  }
+
+  .panels {
+    position: relative;
+  }
+
 footer {
     position: fixed;
     width: 100%;
@@ -16,3 +106,4 @@ footer {
     bottom: 0;
     left: 0;
   }
+
