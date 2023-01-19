@@ -79,6 +79,20 @@ margin-bottom: 12px;
     background-size: contain;
 }
 
+.codigotchi-screen_dance{
+    background-image: url('./images/dance.gif');
+}
+
+.codigotchi-screen_eat{
+    background-image: url('./images/eat.gif');
+}
+
+.codigotchi-screen_sleep{
+    background-image: url('./images/sleep.gif');
+}
+
+
+
 .panel-commands {
     visibility: hidden;
     position: absolute;
@@ -97,6 +111,11 @@ margin-bottom: 12px;
 
   .panels {
     position: relative;
+  }
+
+  #transcript {
+    color: white;
+    font-weight: bold;
   }
 
 footer {
