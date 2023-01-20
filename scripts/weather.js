@@ -4,7 +4,9 @@ const weatherIcon = document.querySelector(`.weather-icon`);
 const weatherLocation = document.querySelector(`.weather-location`);
 const weatherTemperature = document.querySelector(`.weather-temperature`);
 const descriptionElement = document.querySelector(`.description`);
+// const weatherNoLocation = document.querySelector(`.weather-no-location`);
 const htmlElement = document.documentElement;
+// const locationDisabled = "../images/weather/geolocation_disabled.png";
 
 navigator.geolocation.getCurrentPosition(onSuccess, onError);
 
@@ -17,8 +19,8 @@ function onSuccess(data) {
 
   const units = "metric";
   const lang = "eng";
-  const appid = "5728f34643befa0d9cc117a200141288";
-  //   const appid = "a502b1e1e878fa96b40360656ee6becc";
+  //   const appid = "5728f34643befa0d9cc117a200141288";
+  const appid = "a502b1e1e878fa96b40360656ee6becc";
 
   const endpoint = "https://api.openweathermap.org/data/2.5/weather";
   const url = `${endpoint}?lat=${lat}&lon=${lon}&appid=${appid}&units=${units}&lang=${lang}`;
@@ -32,6 +34,7 @@ function onSuccess(data) {
     .then(function (data) {
       console.log(data);
       // Kun sijainnin data saadaan takaisin, kerää sopivat ja päivitä sivusto
+      const locationName = data.name;
       const temperature = Math.floor(data.main.temp);
       const iconCode = data.weather[0].icon;
       const description = data.weather[0].description;
@@ -57,6 +60,7 @@ function onSuccess(data) {
 function onError(error) {
   weatherLocation.innerText =
     "You must permit your browser to access your current location";
+  //   weatherNoLocation.src = locationDisabled;
   console.error(error);
 }
 
