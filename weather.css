@@ -31,6 +31,8 @@ main {
 
 .weather-icon{
     max-width: 100%;
+    transition: opacity 1s;
+    transition-delay: 0.25s;
 }
 
 .weather-temperature{
@@ -45,6 +47,9 @@ main {
     background-color: aliceblue;
     padding: 20px;
     border-radius: 16px;
+
+    transition: transform 0.3s, opacity 1s;
+    transition-delay: 0.2s;
 }
 
 .panel-title {
@@ -55,6 +60,16 @@ main {
 .description {
     font-weight: bold;
     font-size: 18px;
+}
+
+.js-loading .weather-icon {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.js-loading .panel{
+    opacity: 0;
+    transform: scale(0);
 }
 
 footer {
