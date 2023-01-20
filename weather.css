@@ -6,7 +6,9 @@
 
 html {
     line-height: 1;
-    height: 100vh;
+    max-height: 100vh;
+    background-image: linear-gradient(to bottom, #ebeffd, #85a5fa);
+    background-attachment:fixed;
 }
 
 .container {
@@ -29,6 +31,30 @@ main {
 
 .weather-icon{
     max-width: 100%;
+}
+
+.weather-temperature{
+    font-size: 112px;
+}
+
+.weather-info{
+    margin-bottom: 16px
+}
+
+.panel {
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.panel-title {
+    margin-bottom: 12px;
+    color: darkblue;
+}
+
+.description {
+    font-weight: bold;
+    font-size: 18px;
 }
 
 footer {
