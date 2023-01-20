@@ -3,7 +3,7 @@ console.log("heyo!");
 const weatherIcon = document.querySelector(`.weather-icon`);
 const weatherLocation = document.querySelector(`.weather-location`);
 const weatherTemperature = document.querySelector(`.weather-temperature`);
-const descriptionElement = document.querySelector(".description");
+const descriptionElement = document.querySelector(`.description`);
 const htmlElement = document.documentElement;
 
 navigator.geolocation.getCurrentPosition(onSuccess, onError);
@@ -37,7 +37,7 @@ function onSuccess(data) {
       const description = data.weather[0].description;
       // Valitse sopia kuva perustuen sijainnin dataan
 
-      weatherIcon.src = `images/${iconCode}.png`;
+      weatherIcon.src = `../images/weather/${iconCode}.png`;
       weatherIcon.alt = description;
 
       weatherLocation.innerText = locationName;
@@ -50,7 +50,7 @@ function onSuccess(data) {
       descriptionElement.innerText = getDescription(iconCode);
 
       //   remove the opacity
-      HTMLElement.classList.remove("js-loading");
+      htmlElement.classList.remove("js-loading");
     });
 }
 
@@ -80,3 +80,7 @@ const description = {
   "50d": "Fog lights should be on!",
   "50n": "Drive carefully!",
 };
+
+function getDescription(iconCode) {
+  return description[iconCode];
+}
