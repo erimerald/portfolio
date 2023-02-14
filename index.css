@@ -57,8 +57,10 @@ footer {
   position: fixed;
   width: 100%;
   text-align: center;
-  bottom: 0;
+  bottom: 2 em;
   left: 0;
+  font-size: 18px;
+  background-color: rgb(23, 33, 34);
 }
 
 h1 {
@@ -86,8 +88,8 @@ p {
 
 .button {
   background-color: rgb(187, 158, 255);
-  padding: 0.8em 0.8em;
-  margin: 10px;
+  padding: 0.6em 0.6em;
+  margin: 4px;
   border: 1px dashed snow;
   box-shadow: 1px 1px 6px rgb(187, 158, 255);
   color: snow;
@@ -101,6 +103,24 @@ p {
   color: rgb(148, 32, 206);
   box-shadow: 2px 2px 6px rgb(187, 158, 255);
   border: 1px dashed rgb(187, 158, 255);
+}
+
+.button-git {
+  background-color: rgb(187, 158, 255);
+  padding: 0.4em 0.4em;
+  margin: 3px;
+  border: 1px solid rgba(255, 250, 250, 0.596);
+  box-shadow: inset 1px 1px 6px rgb(187, 158, 255);
+  color: snow;
+  font-size: 18px;
+  border-radius: 6px;
+  transition-duration: 0.3s;
+  cursor: crosshair;
+}
+.button-git:hover {
+  background-color: powderblue;
+  color: rgb(148, 32, 206);
+  box-shadow: inset 2px 2px 7px rgb(187, 158, 255);
 }
 
 input[type="text"],
