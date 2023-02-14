@@ -63,6 +63,7 @@ footer {
   left: 0;
   font-size: 18px;
   background-color: rgba(176, 224, 230, 0.932);
+  box-shadow: 0 -1px 25px 1px rgba(54, 139, 209, 0.438);
 }
 
 h1 {

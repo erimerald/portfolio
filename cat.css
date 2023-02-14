@@ -1,12 +1,14 @@
 :root{
     /* --font: ?; */
     --pink: #f71469;
+    --pinklighter: #f71486;
 }
 
 *{
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 6px;
     border: none;
 }
 
@@ -64,15 +66,25 @@ button {
     border-radius: 8px;
     height: 56px;
     width: 60px;
-    background-color: var(--pink);
+    background-color: var(--pinklighter);
     color: white;
     font-size: 16px;
+    box-shadow: 3px 3px 6px #451bffa9;
 }
+
+button:hover {
+    background-color: var(--pink);
+    color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 12px #3009dd;
+    border: 2px solid #451bffa9;
+  }
 
 button:disabled{
     opacity: 0.6;
     background-color: aliceblue;
 }
+
+
 
 label{
     display:block;
@@ -107,11 +119,13 @@ label{
 .footer {
     position: fixed;
     width: 100%;
-    height: 2em;
+    height: 3em;
     text-align: center;
     bottom: 0px;
     left: 0;
-    background-color: rgba(245, 170, 255, 0.932);
+    font-size: 18px;
+    background-color: #f71486;
+    box-shadow: 0 -1px 25px 1px rgba(0,0,0,.25);
   }
 
 .footer  a {
