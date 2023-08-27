@@ -110,8 +110,8 @@ p {
 
 .button-git {
   background-color: rgb(148, 117, 221);
-  padding: 0.4em 0.4em;
-  margin: 3px;
+  padding: 10px 20px;
+  margin: 24px;
   border: 1px solid rgba(255, 250, 250, 0.596);
   box-shadow: inset 1px 1px 6px rgb(187, 158, 255);
   color: snow;
