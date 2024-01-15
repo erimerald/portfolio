@@ -1,0 +1,98 @@
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Darker Grotesque';
+    color: slateblue;
+    font-size: 40px;
+    background-color: thistle;
+    align-content: center;
+    display:flex;
+    justify-content: space-around;
+    margin: 5px;
+}
+
+h1 {
+font-size: 52px;
+padding: 4px;
+}
+
+.game-container {
+    background-color: bisque;
+    width: 484px;
+}
+
+.game-panel {
+    background-color: honeydew;
+    border: 6px dotted lavender ;
+    border-radius: 6px;
+}
+
+.game-board{
+   border: 2px double lavender;
+}
+
+.score {
+    font-size: 32px;
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    border: 1px solid thistle;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.end-game-screen{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.end-game-text{
+    font-size: 48px;
+    text-transform: uppercase;
+    font-family: 'Press Start 2P';
+}
+
+.btn{
+font-size: 24px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+text-transform: uppercase;
+padding: 4px 20px 8px 20px;
+cursor: pointer;
+border-radius: 16px;
+border: 4px double olivedrab;
+}
+
+.btn:hover{
+    background-color: cornsilk;
+}
+
+.hidden{
+    display: none;
+}
