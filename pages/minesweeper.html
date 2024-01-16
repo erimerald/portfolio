@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Board</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+  <!-- Stylesheet  & Script-->
+    <link href="../gameboard.css" rel="stylesheet" />
+    <script src="/scripts/minesweeper.js"></script>
+  </head>
+
+  <body>
+      <div class="game-container">
+        <header class="game-panel">
+          <h1>Game Board</h1>
+          <div class="score">
+            <span> Score: </span>
+            <span> 00000</span>
+          </div>
+        </header>
+        <main class="game-board">
+        <div class="grid">
+          <div class="cell"></div>
+        </div>
+        <!-- end of the game -->
+        <div class="end-game-screen hidden">
+          <h2 class="end-game-text">
+            Game <br />
+            Over
+          </h2>
+          <button class="btn play-again">Play Again</button>
+        </div>
+      </div>
+    </main>
+</div>
+  </body>
+</html>
