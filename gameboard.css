@@ -120,7 +120,7 @@ border: 4px double olivedrab;
 }
 
 .cell-bomb{
-    background-image: url('./images/coffee.png');
+    background-image: url('./images/bomb.png');
     background-size: contain;
     background-position: center;
 }
