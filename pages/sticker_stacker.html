@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stacker</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link href="../gameboard.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- JavaScript -->
+    <script defer src="../scripts/sticker_stacker.js"></script>
+    <div class="game-container-sticker-stacker">
+      <header class="game-panel">
+        <h1>Stacker</h1>
+        <div class="score">
+          <span>SCORE</span><span class="score-counter">00000</span>
+        </div>
+      </header>
+
+      <main class="game-board">
+        <!-- placeholder for game-over screen -->
+          <div class="end-game-screen hidden">
+            <h2 class="end-game-text">Game <br />Over</h2>
+            <button class="btn play-again">Play Again</button>
+          </div>
+
+        <!-- board generated in HTML -->
+        <div class="grid-sticker-stacker"></div>
+        <button class="btn btn-full stack">Stack</button>
+        </div>
+
+
+
+      </main>
+
+
+    </div>
+  </body>
+</html>
